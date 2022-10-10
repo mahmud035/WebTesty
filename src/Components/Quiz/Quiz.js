@@ -1,6 +1,9 @@
 import React from 'react';
 import QuizOption from '../QuizOption/QuizOption';
 import './Quiz.css';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const Quiz = ({ quiz, index }) => {
   const { question, options, correctAnswer } = quiz;
@@ -10,8 +13,16 @@ const Quiz = ({ quiz, index }) => {
     const selectedOption = optionElement.innerText;
     if (selectedOption === correctAnswer) {
       optionElement.classList.add('right-answer');
+      toast.success('Wow Right Answer!', {
+        position: 'top-center',
+        autoClose: 500,
+      });
     } else {
       optionElement.classList.add('wrong-answer');
+      toast.error('Oops Wrong Answer', {
+        position: 'top-center',
+        autoClose: 500,
+      });
     }
   };
 
@@ -30,6 +41,7 @@ const Quiz = ({ quiz, index }) => {
           ></QuizOption>
         ))}
       </div>
+      <ToastContainer position="top-center" autoClose={500} />
     </div>
   );
 };
