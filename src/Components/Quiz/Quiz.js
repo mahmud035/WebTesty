@@ -2,8 +2,8 @@ import React from 'react';
 import QuizOption from '../QuizOption/QuizOption';
 import './Quiz.css';
 import { ToastContainer, toast } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
+import { AiFillEye } from 'react-icons/ai';
 
 const Quiz = ({ quiz, index }) => {
   const { question, options, correctAnswer } = quiz;
@@ -26,11 +26,19 @@ const Quiz = ({ quiz, index }) => {
     }
   };
 
+  const showRightAnswer = () => {
+    toast.info(`Correct Answer: ${correctAnswer}`, {
+      position: 'top-center',
+      autoClose: 1500,
+    });
+  };
+
   return (
     <div className="quiz-card">
       <h5>
         Quiz {index + 1}: {question}
       </h5>
+      <AiFillEye onClick={showRightAnswer} className="eye-icon"></AiFillEye>
 
       <div className="quiz-option-container">
         {options.map((option, index) => (

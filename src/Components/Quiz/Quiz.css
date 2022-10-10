@@ -6,10 +6,23 @@
   padding: 2rem;
   margin: 1.5rem auto;
   border-radius: 8px;
+  position: relative;
+}
+
+.quiz-card h5 {
+  width: 90%;
 }
 
 .quiz-option-container {
   margin-top: 3rem;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
