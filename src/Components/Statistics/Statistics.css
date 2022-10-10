@@ -1,0 +1,23 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  box-sizing: border-box;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  border-radius: 20px 20px 0 0;
+}
+
+/** Media Queries */
+@media (max-width: 600px) {
+  .chart-container {
+    width: 340px;
+  }
+
+  .chart-container h1 {
+    font-size: 1.5rem;
+  }
+}
