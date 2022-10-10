@@ -1,0 +1,32 @@
+.quiz-topic-card {
+  background-color: bisque;
+  border-radius: 8px;
+}
+
+.quiz-topic-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.topic-info {
+  padding: 1rem;
+}
+
+.btn-practice {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.right-arrow-icon {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
