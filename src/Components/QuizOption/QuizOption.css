@@ -1,0 +1,17 @@
+.option {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 8px;
+  width: 80%;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+p.option.right-answer {
+  background-color: rgb(24, 212, 24);
+}
+
+p.option.wrong-answer {
+  background-color: red;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import './QuizOption.css';
 
-const QuizOption = ({ option }) => {
-  console.log(option);
+const QuizOption = ({ option, handleRightAndWrongAnswer }) => {
   return (
     <div>
-      <p>{option}</p>
+      <p
+        onClick={(e) => handleRightAndWrongAnswer(e.target)}
+        className="option"
+      >
+        {option}
+      </p>
     </div>
   );
 };
