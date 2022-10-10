@@ -1,0 +1,18 @@
+.nav-items {
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+  color: #ccc;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+a.active {
+  color: red;
+}
