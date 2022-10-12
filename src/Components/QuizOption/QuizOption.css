@@ -1,17 +1,21 @@
 .option {
-  background-color: aliceblue;
+  background-color: #efefef;
+  color: #3c4b64;
   text-align: center;
   padding: 0.7rem;
   border-radius: 8px;
   width: 80%;
   margin-inline: auto;
   cursor: pointer;
+  font-weight: 500;
 }
 
 p.option.right-answer {
-  background-color: rgb(24, 212, 24);
+  background-color: #3ec65d;
+  color: #fff;
 }
 
 p.option.wrong-answer {
-  background-color: red;
+  background-color: #f92600;
+  color: #fff;
 }

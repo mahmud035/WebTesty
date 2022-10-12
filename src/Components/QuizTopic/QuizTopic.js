@@ -14,7 +14,7 @@ const QuizTopic = ({ quizTopic }) => {
         <h6> Questions: {total}</h6>
         <Link to={`/quiz/${id}`}>
           <button className="btn-practice">
-            Start Practice{' '}
+            Start Practice
             <FaArrowRight className="right-arrow-icon"></FaArrowRight>
           </button>
         </Link>

@@ -10,7 +10,7 @@ const AllQuiz = () => {
   const { name } = quizTopicData;
 
   return (
-    <div>
+    <div className="all-quiz-container">
       <h1>Quiz of {name}</h1>
 
       <div className="quiz-card-container">
