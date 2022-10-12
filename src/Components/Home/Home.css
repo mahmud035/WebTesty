@@ -1,11 +1,34 @@
-/* .bg-image {
-  background: rgba(76, 175, 80, 0.3);
+.header-content {
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
 }
 
-.bg-image img {
-  width: 100%;
-  height: calc(100vh - 74px);
-} */
+.header-content h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.btn-header-practice {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  background-color: #256d85;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-header-practice:hover {
+  background-color: rgba(143, 227, 207, 0.918);
+}
 
 .quiz-topic-container {
   display: grid;
