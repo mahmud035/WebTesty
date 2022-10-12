@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.accordion-container h1 {
+  padding-bottom: 3rem;
+}
+
 .accordion-body {
   background-color: hsl(209, 23%, 22%) !important;
   color: hsl(0, 0%, 100%);

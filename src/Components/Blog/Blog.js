@@ -5,6 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 const Blog = () => {
   return (
     <div className="accordion-container">
+      <h1>Questions & Answer</h1>
       <Accordion className="w-50 mx-auto accordion-content" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>

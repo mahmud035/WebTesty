@@ -43,6 +43,7 @@ function App() {
         {
           path: '/topics',
           element: <Topics></Topics>,
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
         },
       ],
     },
