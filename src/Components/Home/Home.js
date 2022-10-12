@@ -30,10 +30,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="quiz-topic-container container">
-        {quizTopics.map((quizTopic, index) => (
-          <QuizTopic key={index} quizTopic={quizTopic}></QuizTopic>
-        ))}
+      <div className="quiz-topic-content-container">
+        <div className="quiz-topic-container container">
+          {quizTopics.map((quizTopic, index) => (
+            <QuizTopic key={index} quizTopic={quizTopic}></QuizTopic>
+          ))}
+        </div>
       </div>
     </div>
   );

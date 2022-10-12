@@ -30,10 +30,14 @@
   background-color: rgba(143, 227, 207, 0.918);
 }
 
+.quiz-topic-content-container {
+  background-color: #090a27;
+}
+
 .quiz-topic-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 5rem;
+  padding-top: 5rem;
   padding-bottom: 7rem;
 }

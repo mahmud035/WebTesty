@@ -13,6 +13,10 @@
   border-radius: 20px 20px 0 0;
 }
 
+.chart-container h1 {
+  color: #000;
+}
+
 /** Media Queries */
 @media (max-width: 600px) {
   .chart-container {

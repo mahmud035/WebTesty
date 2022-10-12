@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.eye-icon:hover {
+  color: #8fe3cf;
+}
+
 @media (max-width: 767px) {
   .quiz-card {
     width: 85%;

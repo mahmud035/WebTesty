@@ -20,6 +20,7 @@ const Navigation = () => {
         <div
           className={`nav-items ${open ? 'show-nav-item' : 'hide-nav-item'}`}
         >
+          <NavLink to="/home">Home</NavLink>
           <NavLink to="/topics">Topics</NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : undefined)}

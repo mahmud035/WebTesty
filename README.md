@@ -19,6 +19,13 @@ WebTesty is a simple react website where users can participate in various quizze
 - Rest API
 - Mobile-first workflow
 
+### What I did
+
+<ul>
+<li>Used React, React Router for build the project </li>
+<li> Used recharts for showing total quiz data </li>
+<li> Create interactive UI </li>
+</ul>
 ### What I learned
 
 While doing this small project gave me a fresh overview of basic react, react-router, react-toasty, and chart. Now I have enough understanding about these topics and I am confident about it.
