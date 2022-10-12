@@ -1,18 +1,62 @@
+.navbar-container {
+  background-color: teal;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .nav-items {
   text-decoration: none;
   display: flex;
   gap: 2rem;
   color: #ccc;
+  background-color: teal;
+  font-weight: 500;
 }
 
 a {
-  color: #000;
+  color: #fff;
 }
 
 a:hover {
-  color: #000;
+  color: #fff;
 }
 
 a.active {
   color: red;
+}
+
+.navbar-toggler {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .show-nav-item {
+    position: absolute;
+    top: 3.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hide-nav-item {
+    position: absolute;
+    top: -800px;
+  }
 }
