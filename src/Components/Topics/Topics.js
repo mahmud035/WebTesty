@@ -1,4 +1,5 @@
 import React from 'react';
+import QuizTopic from '../QuizTopic/QuizTopic';
 import './Topics.css';
 
 const Topics = () => {

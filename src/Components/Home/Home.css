@@ -1,6 +1,16 @@
+/* .bg-image {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+.bg-image img {
+  width: 100%;
+  height: calc(100vh - 74px);
+} */
+
 .quiz-topic-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 5rem;
+  padding-bottom: 7rem;
 }
