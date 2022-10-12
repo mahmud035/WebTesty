@@ -26,7 +26,9 @@ const Home = () => {
             WebTesty is a simple react website where users can participate in
             various quizzes and test their knowledge on particular topics.
           </p>
-          <Link className="btn-header-practice">Let's Practice</Link>
+          <Link to="/topics" className="btn-header-practice">
+            Let's Practice
+          </Link>
         </div>
       </div>
 
