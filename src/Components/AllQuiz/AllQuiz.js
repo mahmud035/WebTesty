@@ -15,7 +15,7 @@ const AllQuiz = () => {
 
       <div className="quiz-card-container">
         {allQuiz.map((quiz, index) => (
-          <Quiz key={index} quiz={quiz} index={index}></Quiz>
+          <Quiz key={quiz.question} quiz={quiz} index={index}></Quiz>
         ))}
       </div>
     </div>

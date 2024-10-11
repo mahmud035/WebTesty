@@ -9,8 +9,8 @@ const Topics = () => {
     <div>
       <div className="quiz-topic-content-container topics-route">
         <div className="quiz-topic-container container">
-          {quizTopics.map((quizTopic, index) => (
-            <QuizTopic key={index} quizTopic={quizTopic}></QuizTopic>
+          {quizTopics.map((quizTopic) => (
+            <QuizTopic key={quizTopic.id} quizTopic={quizTopic}></QuizTopic>
           ))}
         </div>
       </div>

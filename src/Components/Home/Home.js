@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import bg from '../../images/bg.webp';
 import QuizTopic from '../QuizTopic/QuizTopic';
 import './Home.css';
-import bg from '../../images/bg.webp';
 
 const Home = () => {
   const quizTopics = useLoaderData()?.data;
@@ -34,8 +34,8 @@ const Home = () => {
 
       <div className="quiz-topic-content-container">
         <div className="quiz-topic-container container">
-          {quizTopics.map((quizTopic, index) => (
-            <QuizTopic key={index} quizTopic={quizTopic}></QuizTopic>
+          {quizTopics.map((quizTopic) => (
+            <QuizTopic key={quizTopic.id} quizTopic={quizTopic} />
           ))}
         </div>
       </div>

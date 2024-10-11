@@ -1,13 +1,12 @@
 import React from 'react';
-import QuizOption from '../QuizOption/QuizOption';
-import './Quiz.css';
+import { AiFillEye } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AiFillEye } from 'react-icons/ai';
+import QuizOption from '../QuizOption/QuizOption';
+import './Quiz.css';
 
 const Quiz = ({ quiz, index }) => {
   const { question, options, correctAnswer } = quiz;
-  console.log(quiz);
 
   const handleRightAndWrongAnswer = (optionElement) => {
     const selectedOption = optionElement.innerText;
@@ -41,9 +40,9 @@ const Quiz = ({ quiz, index }) => {
       <AiFillEye onClick={showRightAnswer} className="eye-icon"></AiFillEye>
 
       <div className="quiz-option-container">
-        {options.map((option, index) => (
+        {options.map((option) => (
           <QuizOption
-            key={index}
+            key={option}
             option={option}
             handleRightAndWrongAnswer={handleRightAndWrongAnswer}
           ></QuizOption>
